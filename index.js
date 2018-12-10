@@ -24,7 +24,7 @@ class Discovery extends EventEmitter {
     this.destroyed = false
 
     this._announce = opts.announce || []
-    this._intervalMs = opts.intervalMs || (15 * 60 * 1000)
+    this._intervalMs = opts.intervalMs || (2 * 60 * 1000)
     this._trackerOpts = null
     this._dhtAnnouncing = false
     this._dhtTimeout = false
